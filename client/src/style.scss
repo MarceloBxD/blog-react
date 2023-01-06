@@ -167,3 +167,20 @@ $tertiary-color: #9c27b0;
     font-size: 1.1rem;
   }
 }
+
+// Single Page Styles
+
+.single {
+  display: flex;
+  gap: 50px;
+  width: 1024px;
+  margin: 0 auto;
+
+  .content {
+    flex: 5;
+  }
+
+  .menu {
+    flex: 2;
+  }
+}
