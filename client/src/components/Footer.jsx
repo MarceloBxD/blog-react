@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="logo">
-        <img className="logo-img" src={logo} alt="logo" />
+        {/* <img className="logo-img" src={logo} alt="logo" /> */}
       </div>
       <div className="message">Made with love by Marcelo Bracet</div>
     </div>

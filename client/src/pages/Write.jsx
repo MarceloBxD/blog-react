@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Write = () => {
-  return <div>Write</div>;
+  return <div className="write">Write</div>;
 };
