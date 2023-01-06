@@ -2,11 +2,15 @@ $primary-color: #f87634;
 $secondary-color: #e91e63;
 $tertiary-color: #9c27b0;
 
+// Global Styles
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+// App Styles
 
 .app {
   .link {
@@ -27,9 +31,7 @@ $tertiary-color: #9c27b0;
     }
   }
 
-  .logo {
-    width: 120px;
-  }
+  // Nav Styles
 
   .nav-items {
     display: flex;
@@ -90,65 +92,74 @@ $tertiary-color: #9c27b0;
       color: $secondary-color;
     }
   }
+
+  // Home Styles
+
   .home {
     padding: 20px;
     width: 100%;
-  }
 
-  .posts {
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-
-    .post {
+    .posts {
       display: flex;
-      margin: 20px;
-      gap: 100px;
-      padding: 10px;
+      flex-direction: column;
+      gap: 150px;
 
-      :nth-child(2n + 1) {
-        flex-direction: row;
-      }
+      .post {
+        display: flex;
+        margin: 20px;
+        gap: 100px;
+        padding: 10px;
 
-      .img {
-        flex: 2;
-        width: 200px;
-      }
+        .img {
+          flex: 2;
+          width: 200px;
+        }
 
-      .post-info {
-        flex: 2;
-        .link {
-          text-decoration: none;
-          color: #000;
+        .post-info {
+          flex: 2;
+
+          .link {
+            text-decoration: none;
+            color: #000;
+          }
         }
       }
+    }
 
-      button {
-        margin-top: 20px;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-        border: none;
+    // Button Styles
 
-        &:hover {
-          cursor: pointer;
-          background-color: $secondary-color;
-        }
+    button {
+      margin-top: 20px;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
       }
     }
   }
-  .footer {
-    margin-top: 150px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-    color: #fff;
-    font-weight: bold;
-    background-color: $tertiary-color;
+}
 
-    img {
-      width: 120px;
-    }
+// Footer Styles
+
+.footer {
+  margin-top: 150px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  color: #fff;
+  font-weight: bold;
+  background-color: $tertiary-color;
+
+  .logo-img {
+    width: 120px;
+  }
+
+  .message {
+    font-size: 1.1rem;
   }
 }
